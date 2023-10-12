@@ -25,6 +25,10 @@ export default {
 
 <style scoped>
 /* Estilos modernos */
+h1{
+  color: #1e1e1e;
+}
+
 .app {
   max-width: 360px;
   margin: 0 auto;
@@ -34,10 +38,12 @@ export default {
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-  font-size: 28px; /* Tamaño de fuente aumentado */
+  font-size: 28px; 
   margin-bottom: 20px;
 }
 
@@ -50,7 +56,7 @@ export default {
   color: #333;
   display: block;
   padding: 12px; /* Espacio interno aumentado */
-  margin: 12px 0; /* Espacio entre los botones aumentado */
+  margin: 12px; /* Espacio entre los botones aumentado */
   background: #0070f3;
   color: #fff;
   border-radius: 4px;
