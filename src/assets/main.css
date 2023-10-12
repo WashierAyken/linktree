@@ -1,0 +1,65 @@
+@import './base.css';
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #6a3093, #a044ff);
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  /* Cambiado a blanco para mejor contraste con el fondo morado */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 80%;
+  text-align: center;
+  /* Centra el texto en el botón */
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.4s ease;
+  /* Suaviza la transición del color de fondo */
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Cambia el color de fondo al pasar el ratón */
+}
+
+@media (min-width: 1024px) {
+
+  #app {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Crea una cuadrícula responsiva */
+    gap: 2rem;
+    /* Espacio entre los botones */
+    padding: 0 2rem;
+    align-items: start;
+    /* Alinea los botones al inicio del contenedor */
+    justify-content: center;
+    /* Centra los botones horizontalmente */
+    align-content: center;
+    /* Centra los botones verticalmente */
+    grid-auto-flow: dense;
+    /* Permite que los elementos ocupen espacios vacíos en la cuadrícula */
+
+  }
+
+
+
+
+
+}
