@@ -3,19 +3,19 @@
     <h1 class="title">Mi Linktree</h1>
     <div class="link-container">
       <a v-for="link in links" :key="link.text" :href="link.url" class="link" target="_blank">
-        {{ link.text }}
+        <i class="fas fa-external-link-alt"></i> {{ link.text }}
       </a>
     </div>
   </div>
 </template>
-
 <script>
 export default {
   data() {
     return {
       links: [
-        { text: "Enlace 1", url: "http://www.linkedin.com/in/isaactovias" },
-        { text: "Enlace 2", url: "http://www.twitch.tv/donayken" },
+        { text: "Linkedin", url: "http://www.linkedin.com/in/isaactovias" },
+        { text: "Twitch", url: "http://www.twitch.tv/donayken" },
+        {text: "Twitter", url:"http://www.twitter.com/illojuan"},
         // Agrega más enlaces si es necesario
       ],
     };
@@ -35,37 +35,45 @@ h1{
   padding: 20px;
   font-family: Arial, sans-serif;
   text-align: center;
-  background: #fff;
+  background: linear-gradient(to bottom, #6a3093, #a044ff);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
 }
-
 .title {
   font-size: 28px; 
   margin-bottom: 20px;
+  color: #474242;
+
 }
 
 .link-container {
+  display: flex;
   text-align: center;
+
 }
 
 .link {
   text-decoration: none;
   color: #333;
   display: block;
-  padding: 12px; /* Espacio interno aumentado */
-  margin: 12px; /* Espacio entre los botones aumentado */
+  padding: 12px; 
+  margin: 120px; 
   background: #0070f3;
   color: #fff;
   border-radius: 4px;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  font-size: 16px; /* Tamaño de fuente aumentado */
+  font-size: 16px; 
+  font-weight: 600;
+  
+
 }
 
 .link:hover {
   background-color: #0050c8;
   transform: scale(1.05);
+  
+  
 }
 </style>
